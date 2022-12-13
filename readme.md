@@ -1,4 +1,4 @@
-<h1> Hello all this project is done as an assigment in flex money interview process </h1>
+<h1> Hello all this project is done as an assigment for flex money interview process </h1>
 
 <h3>This repo contains files related to front end </h3>
 
@@ -30,7 +30,13 @@
 <p>Did not use any authentications like JWT since the main focus was to built the funtionalities of the website </p>
 
 
+<h3> Tech Stack Used </h3>
+<p> ReactJs along with Vite for faster builds </p>
+<p> Axios for Creating REST APIs </p>
 
 
+<p> This is not reuired for the most case but adding it here for reference </p>
+<a href="https://yogi-yoga.onrender.com">Backend Link </a>
 
+<p> Backend Repo link : <a href="https://github.com/deekshith03/YOGA_BACK">Repo</a></p>
 
