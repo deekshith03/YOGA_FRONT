@@ -58,6 +58,12 @@ const useStyles = createUseStyles({
   modal__footer: {
     padding: "16px 20px",
   },
+
+  "@media only screen and (max-device-width: 480px)": {
+    modal__content: {
+      width: "auto",
+    },
+  },
 });
 const Modal = (props) => {
   const modalRef = useRef();

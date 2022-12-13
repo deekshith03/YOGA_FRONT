@@ -26,6 +26,12 @@ const useStyles = createUseStyles({
     textAlign: "center",
     color: "#1B4D3E",
   },
+
+  "@media only screen and (max-device-width: 480px)": {
+    card: {
+      width: "auto",
+    },
+  },
 });
 
 export const BatchTile = ({ data }) => {

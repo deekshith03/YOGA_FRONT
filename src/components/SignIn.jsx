@@ -37,6 +37,18 @@ const useStyles = createUseStyles({
     border: "none",
     cursor: "pointer",
   },
+  "@media only screen and (max-device-width: 480px)": {
+    submitBtn: {
+      border: "none",
+      backgroundColor: "white",
+      borderRadius: "10px",
+      cursor: "pointer",
+      width: "100%",
+      padding: "3.5vw",
+      marginTop: "4.9vw",
+      color: "#1B4D3E",
+    },
+  },
 });
 
 const signInSchema = Yup.object().shape({

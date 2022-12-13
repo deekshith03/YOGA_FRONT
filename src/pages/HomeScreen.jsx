@@ -12,7 +12,6 @@ const useStyles = createUseStyles({
     marginLeft: "10vw",
     marginRight: "10vw",
     paddingTop: "2.5rem",
-    // backgroundColor: "#e2dd9",
   },
   title: {
     textAlign: "center",
@@ -40,6 +39,12 @@ const useStyles = createUseStyles({
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     minHeight: "100vh",
+  },
+
+  "@media only screen and (max-device-width: 480px)": {
+    buttonContainer:{
+      display:'block'
+    }
   },
 });
 export const HomeScreen = () => {

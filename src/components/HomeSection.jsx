@@ -32,6 +32,33 @@ const useStyles = createUseStyles({
     marginTop: "0.9vw",
     color: "white",
   },
+  rightSection: {
+    display: "block",
+  },
+  "@media only screen and (max-device-width: 480px)": {
+    submitBtn: {
+      border: "none",
+      backgroundColor: "#1B4D3E",
+      borderRadius: "10px",
+      cursor: "pointer",
+      width: "100%",
+      padding: "3.5vw",
+      marginTop: "4.9vw",
+      color: "white",
+    },
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+      gap: "1vw",
+    },
+    textAreaStlyes: {
+      width: "auto",
+    },
+    rightSection: {
+      display: "none",
+    },
+  },
 });
 
 export const HomeSection = ({ status, handleClick }) => {

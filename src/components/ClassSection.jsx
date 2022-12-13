@@ -6,7 +6,6 @@ import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import { axiosInstance } from "../axios";
 
-
 const useStyles = createUseStyles({
   container: {
     display: "flex",
@@ -63,6 +62,35 @@ const useStyles = createUseStyles({
     color: "#ff3951",
     fontSize: "2rem",
     margin: 0,
+  },
+  "@media only screen and (max-device-width: 480px)": {
+    topSection: {
+      flexDirection: "column",
+      gap: "3vh",
+    },
+    submitBtn: {
+      border: "none",
+      backgroundColor: "#1B4D3E",
+      borderRadius: "10px",
+      cursor: "pointer",
+      width: "100%",
+      padding: "3.5vw",
+      marginTop: "4.9vw",
+      color: "white",
+    },
+    btn: {
+      border: "none",
+      backgroundColor: "#1B4D3E",
+      borderRadius: "10px",
+      cursor: "pointer",
+      width: "100%",
+      padding: "3.5vw",
+      marginTop: "4.9vw",
+      color: "white",
+    },
+    enrolledContainer: {
+      flexDirection: "column",
+    },
   },
 });
 export const ClassSection = ({

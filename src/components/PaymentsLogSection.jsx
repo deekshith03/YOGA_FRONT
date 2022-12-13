@@ -66,6 +66,25 @@ const useStyles = createUseStyles({
     justifyContent: "space-around",
     color: "#1B4D3E",
   },
+  "@media only screen and (max-device-width: 480px)": {
+    submitBtn: {
+      border: "none",
+      backgroundColor: "#1B4D3E",
+      borderRadius: "10px",
+      cursor: "pointer",
+      width: "100%",
+      padding: "3.5vw",
+      marginTop: "4.9vw",
+      color: "white",
+    },
+    tileTitle: {
+      gap: "14vw",
+      padding: "4.2vw",
+    },
+    card: {
+      width: "90vw",
+    },
+  },
 });
 
 export const PaymentsLogSection = ({

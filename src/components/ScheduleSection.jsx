@@ -42,6 +42,24 @@ const useStyles = createUseStyles({
     width: "15vw",
     fontSize: "1.2rem",
   },
+  "@media only screen and (max-device-width: 480px)": {
+    inputstyles: {
+      width: "auto",
+    },
+    dropDownStyles: {
+      width: "auto",
+    },
+    submitBtn: {
+      border: "none",
+      backgroundColor: "#1B4D3E",
+      borderRadius: "10px",
+      cursor: "pointer",
+      width: "100%",
+      padding: "3.5vw",
+      marginTop: "4.9vw",
+      color: "white",
+    },
+  },
 });
 
 const scheduleSchema = Yup.object().shape({
