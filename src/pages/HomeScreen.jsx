@@ -6,6 +6,7 @@ import { ClassSection } from "../components/ClassSection";
 import { ScheduleSection } from "../components/ScheduleSection";
 import { useNavigate } from "react-router-dom";
 import { axiosInstance } from "../axios";
+import { PaymentsLogSection } from "../components/PaymentsLogSection";
 const useStyles = createUseStyles({
   homeContainer: {
     marginLeft: "10vw",
@@ -108,6 +109,11 @@ export const HomeScreen = () => {
             handleClick={(val) => handleMenuClick(val)}
             menuChoice={menuChoice}
           />
+          <MenuOption
+            value={"Payments Log"}
+            handleClick={(val) => handleMenuClick(val)}
+            menuChoice={menuChoice}
+          />
         </div>
         {menuChoice === "Home" && (
           <HomeSection
@@ -124,6 +130,16 @@ export const HomeScreen = () => {
             month={month}
             year={year}
             batches={batches}
+            handleStatusChange={(e) => setStatus(e)}
+          />
+        )}
+        {menuChoice === "Payments Log" && (
+          <PaymentsLogSection
+            status={status}
+            month={month}
+            year={year}
+            batches={batches}
+            handleClick={(val) => handleMenuClick(val)}
             handleStatusChange={(e) => setStatus(e)}
           />
         )}

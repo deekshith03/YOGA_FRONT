@@ -26,6 +26,7 @@ const useStyles = createUseStyles({
     display: "flex",
     flexDirection: "column",
   },
+  
 });
 
 export const MenuOption = ({ value, handleClick, menuChoice }) => {
@@ -34,7 +35,7 @@ export const MenuOption = ({ value, handleClick, menuChoice }) => {
     <div className={classes.container}>
       <button
         type="button"
-        class={classes.filterBtn}
+        className={classes.filterBtn}
         value={value}
         onClick={(e) => handleClick(e.target.value)}
       >
