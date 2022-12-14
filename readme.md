@@ -2,9 +2,15 @@
 
 <h3>This repo contains files related to front end </h3>
 
+
+
 <h3>PS : Please try to click login or register two three times backend being a free service it takes time to wake up </h3>
 
+<p>Login id : admin@gmail.com </p>
+<p>Password : Admin@123 </p>
 <p>Live demo:</p><a href="https://iridescent-kringle-652db9.netlify.app/">click here</a>
+
+
 
 <h1> There are four sections mainly: , schedule, classes, payment log </h1>
 
