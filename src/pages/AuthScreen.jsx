@@ -3,7 +3,6 @@ import { createUseStyles } from "react-jss";
 import { Register } from "../components/Register";
 import { SignIn } from "../components/SignIn";
 import { useNavigate } from "react-router-dom";
-import { axiosInstance } from "../axios";
 
 const useStyles = createUseStyles({
   container: {
@@ -75,18 +74,6 @@ function AuthScreen() {
   const handleNewUser = () => {
     setNewUser((newUser) => !newUser);
   };
-
-  useEffect(() => {
-    axiosInstance
-      .get("/api/batches/getdetails")
-      .then((res) => {
-        console.log(res.data);
-        setBatches([...res.data]);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
 
   console.log(import.meta.env.VITE_BASE_URL, "hello");
 
